@@ -1,0 +1,32 @@
+<!DOCTYPE html>                    <!-- tells the browser "this is modern HTML" -->
+<html>
+<head>
+  <!-- <head> = setup/config. Nothing here is visible on the page. -->
+  <meta charset="UTF-8">                                        <!-- text encoding -->
+  <meta name="viewport" content="width=device-width">           <!-- makes phones render it properly -->
+  <title>Kent’s photo book</title>                              <!-- browser tab text -->
+  <link rel="stylesheet" href="style.css">                      <!-- like "import style" — loads the CSS file -->
+</head>
+<body>
+  <!-- <body> = everything visible. Tags work like nested parentheses:
+       <p>opens ... </p>closes. Indentation is just for readability, like Python
+       but optional. -->
+
+  <header>
+    <h1><a href="index.html">Kent’s photo book</a></h1>   <!-- h1 = biggest heading. a = a link; href = where it goes -->
+    <nav>                                    <!-- nav = just a labeled box for the menu links -->
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="cover">   <!-- class="cover" centers the text on this page -->
+    <img src="_DSF6761.JPG" alt="The Rhone Glacier">  <!-- img shows a file; alt = text if it fails to load -->
+    <p class="caption">Rhone Glacier, 2024</p>
+    <p>A collection of photos that I have taken and the stories behind them.</p>
+  </main>
+
+  <footer>&copy; 2026 Kent</footer>          <!-- &copy; is the © symbol -->
+</body>
+</html>

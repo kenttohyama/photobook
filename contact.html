@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Contact — Kent’s photo book</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">Kent’s photo book</a></h1>
+    <nav>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="cover">   <!-- centers the intro line; the form re-aligns itself left -->
+    <p>Say hello.</p>
+
+    <!-- A Netlify form. The data-netlify="true" attribute is the magic bit:
+         when the site is hosted on Netlify, they detect it and collect
+         submissions for you (Site → Forms in their dashboard). Your email
+         address never appears anywhere in the site.
+         NOTE: it only works on the live Netlify site — submitting the form
+         while previewing the file locally will just show an error page. -->
+    <form name="contact" method="POST" data-netlify="true">
+      <!-- label = the text above a box; for/id pair links them, so
+           clicking the label focuses the box -->
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <!-- textarea = multi-line text box; rows = starting height -->
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <footer>&copy; 2026 Kent</footer>
+</body>
+</html>
